@@ -55,7 +55,9 @@ body {
 
 section {
   min-height: 200px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section:nth-child(2n) {
