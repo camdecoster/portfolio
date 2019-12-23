@@ -56,8 +56,8 @@ body {
 header {
   box-sizing: border-box;
   width: 100%;
-  /*min-height: 104px;*/
-  position: sticky;
+  min-height: 108px;
+  position: fixed;
   top: 0;
   left: 0;
   padding-top: 5px;
@@ -113,11 +113,17 @@ header {
 
 main section {
   min-height: 100vh;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* Add space so that elements aren't hidden by header */
+main > section {
+  padding: 10px;
+  padding-top: 108px;
+  padding-bottom: 108px;
 }
 
 main section:nth-child(2n) {
@@ -134,7 +140,7 @@ main section:nth-child(2n) {
 }
 
 #hero-quote {
-  
+  margin-top: 20px;
   font-size: 22px;
   line-height: 170%;
   font-weight: bold;
@@ -178,6 +184,9 @@ section p, .body-text {
   background-color: rgb(90,200,250);
 }
 
+.contact {
+  padding: 10px;
+}
 
 .contact-links {
   width: 200px;
@@ -190,6 +199,9 @@ section p, .body-text {
   text-decoration: none;
 }
 
+.contact p {
+  text-align: center;
+}
 
 
 /* Desktop view */
@@ -239,8 +251,7 @@ section p, .body-text {
     
   }
 
-  #hero-quote {
-    
+  #hero-quote {    
     font-size: 30px;
   }
 
@@ -258,10 +269,5 @@ section p, .body-text {
   }  
 }
 
-@media screen and (min-width: 1300px) {
-  .contact p {
-    text-align: center;
-  }
-}
 
 /* STYLE THE SCROLLBAR? */
