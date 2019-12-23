@@ -1,6 +1,22 @@
 * {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 150%;
+}
+
+a:link, a:visited {
+  color: rgb(74,74,77);
+}
+
+a:link:active, a:visited:active {
+  color: rgb(90,200,250);
+}
+
+.font-01 {
+  font-family: 'Libre Baskerville', serif;  
+}
+
+.font-02 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .dark {
@@ -24,26 +40,40 @@
 
 body {
   margin: 0;
-  
+/*  border-top: 5px solid rgb(90,200,250);*/
 }
 
-.header {
+.top-accent-bar {
   width: 100%;
+  height: 5px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: rgb(90,200,250);
+}
+
+header {
+  box-sizing: border-box;
+  width: 100%;
+  /*min-height: 104px;*/
   position: sticky;
   top: 0;
   left: 0;
+  padding-top: 5px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .name {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -53,17 +83,6 @@ body {
   padding-bottom: 10px;
 }
 
-section {
-  min-height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-section:nth-child(2n) {
-  background-color: rgb(215,215,216);
-}
-
 .navbar {
   width: 100%;
   height: 50px;
@@ -71,16 +90,178 @@ section:nth-child(2n) {
   bottom: 0;
   left: 0;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-cntr {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   font-size: 20px;
 }
 
-.navbar a {
-  /* use calculation to determine height? */
-  height: 20px;
-  padding-bottom: 2px;
+.navbar-cntr a {  
   text-decoration: none;
-  
+  color: rgb(215,215,216);
+  line-height: normal;
 }
+
+main section {
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main section:nth-child(2n) {
+  background-color: rgb(215,215,216);
+}
+
+.about p, .projects p, .contact p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.about {
+  box-sizing: border-box;
+}
+
+#hero-quote {
+  
+  font-size: 22px;
+  line-height: 170%;
+  font-weight: bold;
+}
+
+section p, .body-text {
+  width: 90%;
+  max-width: 1000px;
+}
+
+.pic {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 1000px;
+  border-bottom: 5px solid rgb(90,200,250);
+}
+
+.fab, .fas {
+  font-size: 30px;
+}
+
+.projects .fab, .project .fas {
+  font-size: 25px;
+}
+
+.project-links a {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.btn {
+  box-sizing: border-box;
+  width: 125px;
+  font-size: 20px;
+  
+  border: 2px solid rgb(74,74,77);
+}
+
+.btn:hover {
+  /*background-color: rgb(159,159,161);*/
+  background-color: rgb(90,200,250);
+}
+
+
+.contact-links {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contact-links a {
+  text-decoration: none;
+}
+
+
+
+/* Desktop view */
+@media screen and (min-width: 900px) {
+  /* Add info to move main text to right panel */
+  header {
+    max-width: 450px;
+    /* Height is 100% of viewport height */
+    height: 100vh;
+    position: fixed;
+    justify-content: start;
+  }
+
+  .navbar {
+    height: 80px;
+    max-width: 450px;    
+  }
+
+  .navbar-cntr {
+    font-size: 22px;
+  }
+
+  /*header, .navbar {
+    box-sizing: border-box;
+    border-right: 2px solid rgb(90,200,250);
+  }*/
+
+  .name {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 33px;
+    
+  }
+  
+  .job-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 21px;
+  }
+  
+  main {
+    /* Make width take up whole screen minus header/navbar width */
+    width: calc(100% - 450px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+  }
+
+  #hero-quote {
+    
+    font-size: 30px;
+  }
+
+  .about p, .projects p, .contact p {
+    font-size: 20px;
+  }
+
+  .fab, .fas {
+    font-size: 40px;
+  }
+
+  .contact p {
+    font-size: 22px;
+    
+  }  
+}
+
+@media screen and (min-width: 1300px) {
+  .contact p {
+    text-align: center;
+  }
+}
+
+/* STYLE THE SCROLLBAR? */

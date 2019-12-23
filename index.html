@@ -5,31 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body class="gray">
-    <header class="header dark">
-        <p class="name blue-under">Cameron DeCoster</p>
+    <div class="top-accent-bar"></div>
+    <header id="header" class="header dark">
+        <p class="name blue-under font-01">Cameron DeCoster</p>
         <p class="job-title">FULLSTACK WEB DEVELOPER</p>
     </header>
+    <nav class="navbar dark" role="navigation">
+        <section class="navbar-cntr">
+            <a class="dark blue-under" href="index.html#about">ABOUT</a>
+            <a class="dark blue-under" href="index.html#projects">PROJECTS</a>
+            <a class="dark blue-under" href="index.html#contact-info">CONTACT</a>
+        </section>
+    </nav>
     <main>
-        <section class="section-01">
-            <p>Hero</p>
+        <section id="about" class="about">
+            <p id="hero-quote" class="font-01">My name is Cameron DeCoster. I'm an aspiring fullstack web developer with some mechanical engineer mixed in.</p>
+            <img class="hero-pic pic" src="images/denver-skyline.png">
+            <br>
+            <p>I'm currently working through the fullstack web developer track at Bloc. My focus is on learning semantic HTML, CSS, and JavaScript. I love solving puzzles and learning. I've done that for the last 13 years as a mechanical engineer and I look forward to continuing that work as a software engineer. When I'm not designing power plants and writing code, I spend my time trying to keep up with my kids and enjoying the beautiful state of Colorado. I also keep trying to get Linux working on my laptop.</p>
         </section>
-        <section class="section-02">
-            <p>About</p>
+        <section id="projects" class="projects">
+            <section>                
+                <img class="quiz-pic pic" alt="screenshot of futurama quiz web page" src="images/futurama_frontpage_large.png">
+                <h2 class="body-text">Futurama Quiz</h2>
+                <p>
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>                    
+                    <i class="fab fa-js-square"></i>                    
+                </p>
+                <p>Responsive web app designed to test your knowledge of the TV show Futurama. There's a landing page, ten trivia questions - with images, and a final summary. Test your knowledge of the show, or at least enjoy all of the colorful pictures.</p>
+                <div class="project-links body-text">
+                    <a href="https://camdecoster.github.io/futurama-quiz/" target="_blank">
+                        <button class="btn light btn-demo">View Demo</button>
+                    </a>
+                    <a href="https://github.com/camdecoster/futurama-quiz" target="_blank">
+                        <button class="btn light btn-demo">View Code</button>
+                    </a>
+                </div>
+            </section>
         </section>
-        <section class="section-03">
-            <p>Projects</p>
-        </section>
-        <section>
-            <p>Contact</p>
+        <section id="contact-info" class="contact">
+            <p>I'd love to hear from you. For more information or if you have questions, please use one of the following links.</p>
+            <p class="contact-links">
+                <a href="mailto:cameron.decoster@gmail.com" target="_blank">
+                    <i class="fas fa-envelope-square"></i>
+                </a>
+                <a href="https://github.com/camdecoster" target="_blank">
+                    <i class="fab fa-github-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/camerondecoster/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </p>
         </section>
     </main>
-    
-    <nav class="navbar dark" role="navigation">        
-        <a class="dark blue-under" href="about.html">ABOUT</a>
-        <a class="dark blue-under" href="projects.html">PROJECTS</a>
-        <a class="dark blue-under" href="contact.html">CONTACT</a>        
-    </nav>
 </body>
+<script src="https://kit.fontawesome.com/2b45e0fab7.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 </html>
