@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b45e0fab7.js" crossorigin="anonymous"></script>
 </head>
 <body class="gray">
     <div class="top-accent-bar"></div>
@@ -22,22 +23,25 @@
     </nav>
     <main>
         <section id="about" class="about">
-            <p id="hero-quote" class="font-01">My name is Cameron DeCoster. I'm an aspiring fullstack web developer with some mechanical engineer mixed in.</p>
+            <h1 id="hero-quote" class="body-text font-01">My name is Cameron DeCoster. I'm an aspiring fullstack web developer with some mechanical engineer mixed in.</h1>
             <img class="hero-pic pic" alt="black and white silhouette of denver skyline" src="images/denver-skyline.png">
             <br>
             <p>I'm currently working through the fullstack web developer track at Bloc. My focus is on learning semantic HTML, CSS, and JavaScript. I love solving puzzles and learning. I've done that for the last 13 years as a mechanical engineer and I look forward to continuing that work as a software engineer. When I'm not designing power plants and writing code, I spend my time trying to keep up with my kids and enjoying the beautiful state of Colorado. I also keep trying to get Linux working on my laptop.</p>
         </section>
         <section id="projects" class="projects">
-            <section>                
-                <img class="quiz-pic pic" alt="screenshot of futurama quiz web page" src="images/futurama_frontpage_large.png">
-                <h2 class="body-text">Futurama Quiz</h2>
-                <p>
+            <div class="body-text heading-container">
+                <h1 class="heading">PROJECTS</h1>
+            </div>
+            <section id="proj-container" class="body-text">                
+                <img class="quiz-pic proj-pic" alt="screenshot of futurama quiz web page" src="images/futurama_frontpage_large.png">
+                <h3 class="proj-text">Futurama Quiz</h3>
+                <p class="proj-text">
                     <i class="fab fa-html5"></i>
                     <i class="fab fa-css3-alt"></i>                    
                     <i class="fab fa-js-square"></i>                    
                 </p>
-                <p>Responsive web app designed to test your knowledge of the TV show Futurama. There's a landing page, ten trivia questions - with images, and a final summary. Test your knowledge of the show, or at least enjoy all of the colorful pictures.</p>
-                <div class="project-links body-text">
+                <p class="proj-text">Responsive web app designed to test your knowledge of the TV show Futurama. There's a landing page, ten trivia questions - with images, and a final summary. Test your knowledge of the show, or at least enjoy all of the colorful pictures.</p>
+                <div class="project-links proj-text">
                     <a href="https://camdecoster.github.io/futurama-quiz/" target="_blank">
                         <button class="btn light btn-demo">View Demo</button>
                     </a>
@@ -63,6 +67,4 @@
         </section>
     </main>
 </body>
-<script src="https://kit.fontawesome.com/2b45e0fab7.js" crossorigin="anonymous"></script>
-<script src="main.js"></script>
 </html>

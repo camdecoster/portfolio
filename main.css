@@ -38,9 +38,20 @@ a:link:active, a:visited:active {
   border-bottom: 2px solid rgb(90,200,250);
 }
 
+h1 {
+  font-size: 27px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
 body {
   margin: 0;
-/*  border-top: 5px solid rgb(90,200,250);*/
 }
 
 .top-accent-bar {
@@ -112,7 +123,6 @@ header {
 }
 
 main section {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,6 +131,7 @@ main section {
 
 /* Add space so that elements aren't hidden by header */
 main > section {
+  min-height: 100vh;
   padding: 10px;
   padding-top: 108px;
   padding-bottom: 108px;
@@ -141,9 +152,9 @@ main section:nth-child(2n) {
 
 #hero-quote {
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 27px;
   line-height: 170%;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 section p, .body-text {
@@ -160,6 +171,19 @@ section p, .body-text {
 
 .fab, .fas {
   font-size: 30px;
+}
+
+.proj-pic, .proj-text {
+  width: 100%;
+}
+
+.projects .heading {
+  display: inline-block;
+  border-bottom: 2px solid rgb(90,200,250);
+}
+
+.projects section {
+  margin-top: 20px;
 }
 
 .projects .fab, .project .fas {
@@ -206,6 +230,18 @@ section p, .body-text {
 
 /* Desktop view */
 @media screen and (min-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 23px;
+  }
+
   /* Add info to move main text to right panel */
   header {
     max-width: 450px;
@@ -249,10 +285,6 @@ section p, .body-text {
     top: 0;
     right: 0;
     
-  }
-
-  #hero-quote {    
-    font-size: 30px;
   }
 
   .about p, .projects p, .contact p {
