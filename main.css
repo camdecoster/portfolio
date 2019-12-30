@@ -1,14 +1,21 @@
+:root {
+  --dark: rgb(75,75,75);
+  --medium: rgb(185,185,185);
+  --light: rgb(215,215,215);
+  --accent-1: rgb(90,200,250);
+}
+
 * {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 150%;
 }
 
 a:link, a:visited {
-  color: rgb(74,74,77);
+  color: var(--dark);
 }
 
 a:link:active, a:visited:active {
-  color: rgb(90,200,250);
+  color: var(--accent-1);
 }
 
 .font-01 {
@@ -20,22 +27,22 @@ a:link:active, a:visited:active {
 }
 
 .dark {
-  background-color: rgb(74,74,77);
-  color: rgb(215,215,216);
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 .gray {
-  background-color: rgb(159,159,161);
-  color: rgb(74,74,77);
+  background-color: var(--medium);
+  color: var(--dark);
 }
 
 .light {
-  background-color: rgb(215,215,216);
-  color: rgb(74,74,77);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .blue-under {
-  border-bottom: 2px solid rgb(90,200,250);
+  border-bottom: 2px solid var(--accent-1);
 }
 
 h1 {
@@ -61,7 +68,7 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  background-color: rgb(90,200,250);
+  background-color: var(--accent-1);
 }
 
 header {
@@ -118,7 +125,7 @@ header {
 
 .navbar-cntr a {  
   text-decoration: none;
-  color: rgb(215,215,216);
+  color: var(--light);
   line-height: normal;
 }
 
@@ -138,7 +145,7 @@ main > section {
 }
 
 main section:nth-child(2n) {
-  background-color: rgb(215,215,216);
+  background-color: var(--light);
 }
 
 .about p, .projects p, .contact p {
@@ -166,7 +173,10 @@ section p, .body-text {
   box-sizing: border-box;
   width: 90%;
   max-width: 1000px;
-  border-bottom: 5px solid rgb(90,200,250);
+}
+
+.pic, .proj-pic {
+  border-bottom: 5px solid var(--accent-1);
 }
 
 .fab, .fas {
@@ -179,7 +189,7 @@ section p, .body-text {
 
 .projects .heading {
   display: inline-block;
-  border-bottom: 2px solid rgb(90,200,250);
+  border-bottom: 2px solid var(--accent-1);
 }
 
 .projects section {
@@ -190,9 +200,16 @@ section p, .body-text {
   font-size: 25px;
 }
 
-.project-links a {
-  margin-right: 20px;
+a.btn-link {
   text-decoration: none;
+}
+
+a.btn-link:active {
+  color: var(--dark);
+}
+
+button.btn-demo {
+  margin-right: 20px;
 }
 
 .btn {
@@ -200,12 +217,11 @@ section p, .body-text {
   width: 125px;
   font-size: 20px;
   
-  border: 2px solid rgb(74,74,77);
+  border: 2px solid var(--dark);
 }
 
 .btn:hover {
-  /*background-color: rgb(159,159,161);*/
-  background-color: rgb(90,200,250);
+  background-color: var(--accent-1);
 }
 
 .contact {
@@ -259,11 +275,6 @@ section p, .body-text {
   .navbar-cntr {
     font-size: 22px;
   }
-
-  /*header, .navbar {
-    box-sizing: border-box;
-    border-right: 2px solid rgb(90,200,250);
-  }*/
 
   .name {
     padding-top: 30px;
