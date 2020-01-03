@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 :root {
   --dark: rgb(75,75,75);
   --medium: rgb(190,190,190);
   --light: rgb(215,215,215);
   --accent-1: rgb(90,200,250);
 }
+
+/* :root {
+  --dark: #2a4d69;
+  --medium: #adcbe3;
+  --light: #e7eff6;
+  --accent-1: rgb(255, 153, 0);
+} */
 
 * {
   font-family: 'Source Sans Pro', sans-serif;
