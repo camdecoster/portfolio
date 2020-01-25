@@ -71,6 +71,21 @@ body {
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--medium);
+  border-radius: 5px;
+  border: 3px solid var(--light);
+}
+
+
 .top-accent-bar {
   width: 100%;
   height: 5px;
@@ -183,6 +198,9 @@ section p, .body-text {
   box-sizing: border-box;
   width: 90%;
   max-width: 1000px;
+}
+.proj-pic {
+  margin-bottom: 10px;
 }
 
 .pic, .proj-pic {
