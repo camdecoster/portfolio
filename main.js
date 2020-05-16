@@ -1,10 +1,11 @@
+// First attempt at creating a header that shrinks as you scroll
 const header = document.getElementById("header");
 const windowWidth = document.documentElement.clientWidth;
-/*console.log(windowWidth)
+console.log(windowWidth);
 
 if (windowWidth < 900) {
     header.style.height = `${window.innerHeight}px`;
-    let count = 0;    
+    let count = 0;
 }
 
 window.onscroll = function (event) {
@@ -19,15 +20,12 @@ window.onscroll = function (event) {
         console.log(window.pageYOffset);
         if (window.pageYOffset) {
             if (calcHeight < 108) {
-                header.style.height = '108px';
-            }
-            else {
+                header.style.height = "108px";
+            } else {
                 //console.log(window.pageYOffset);
                 header.style.height = `${calcHeight}px`;
-                console.log('Header height is ' + header.style.height);
-                
+                console.log("Header height is " + header.style.height);
             }
-        } 
+        }
     }
-    
-}*/
+};
