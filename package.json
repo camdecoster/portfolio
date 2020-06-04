@@ -1,6 +1,6 @@
 {
-    "homepage": "http://camdecoster.github.io/portfolio",
-    "name": "portfolio-react",
+    "homepage": "https://camdecoster.github.io/portfolio",
+    "name": "portfolio",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

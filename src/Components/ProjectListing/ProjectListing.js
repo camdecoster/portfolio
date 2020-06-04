@@ -16,7 +16,6 @@ export default function ProjectListing(props) {
             icon={icon.info}
         />
     ));
-    console.log(props.icons);
 
     return (
         <section id='ProjectListing' className='body-text'>
