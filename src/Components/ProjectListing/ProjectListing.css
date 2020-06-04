@@ -1,0 +1,33 @@
+#ProjectListing {
+    margin-top: 20px;
+}
+
+#ProjectListing p {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+#ProjectListing .faIcon {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+#ProjectListing .proj-pic {
+    margin-bottom: 10px;
+    border-bottom: 5px solid var(--accent-1);
+}
+
+#ProjectListing .proj-pic,
+#ProjectListing .proj-text {
+    width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+    #ProjectListing p {
+        font-size: 20px;
+    }
+
+    #ProjectListing .faIcon {
+        font-size: 40px;
+    }
+}
