@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e7223c54.chunk.css",
+    "main.js": "/portfolio/static/js/main.6212c3af.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.6212c3af.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5b355ddd.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5b355ddd.js.map",
+    "static/js/2.3503c246.chunk.js": "/portfolio/static/js/2.3503c246.chunk.js",
+    "static/js/2.3503c246.chunk.js.map": "/portfolio/static/js/2.3503c246.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.0cb986f76be2b988107a9789f2f22ebd.js": "/portfolio/precache-manifest.0cb986f76be2b988107a9789f2f22ebd.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.e7223c54.chunk.css.map": "/portfolio/static/css/main.e7223c54.chunk.css.map",
+    "static/js/2.3503c246.chunk.js.LICENSE.txt": "/portfolio/static/js/2.3503c246.chunk.js.LICENSE.txt",
+    "static/media/dashboard_categories.png": "/portfolio/static/media/dashboard_categories.a1f6bc93.png",
+    "static/media/denver-skyline.png": "/portfolio/static/media/denver-skyline.231bf9a8.png",
+    "static/media/dtt_frontpage_large.png": "/portfolio/static/media/dtt_frontpage_large.f40a18a4.png",
+    "static/media/futurama_frontpage_large.png": "/portfolio/static/media/futurama_frontpage_large.28d2abd8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5b355ddd.js",
+    "static/js/2.3503c246.chunk.js",
+    "static/css/main.e7223c54.chunk.css",
+    "static/js/main.6212c3af.chunk.js"
+  ]
+}
