@@ -71,7 +71,7 @@ export default function App() {
                         software engineering team. When I'm not writing code, I
                         spend my time trying to keep up with my kids and
                         enjoying the beautiful state of Colorado. I also keep
-                        trying to find the best Linux distrobution for my
+                        trying to find the best Linux distribution for my
                         laptop.
                     </p>
                 </section>
