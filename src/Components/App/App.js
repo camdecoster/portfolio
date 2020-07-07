@@ -24,6 +24,7 @@ import ProjectListing from "../ProjectListing/ProjectListing";
 import DenverSkyline from "../../images/denver-skyline.png";
 import DttFrontpage from "../../images/dtt_frontpage_large.png";
 import EtFrontpage from "../../images/dashboard_categories.png";
+import QbFrontpage from "../../images/dashboard_quiz_table.png";
 import QuizFrontpage from "../../images/futurama_frontpage_large.png";
 
 export default function App() {
@@ -50,8 +51,8 @@ export default function App() {
             <main>
                 <section id='about' className='about'>
                     <h1 id='hero-quote' className='body-text font-01'>
-                        My name is Cameron DeCoster. I'm an aspiring software
-                        engineer with some mechanical engineer mixed in.
+                        My name is Cameron DeCoster. I'm a software engineer
+                        with some mechanical engineer mixed in.
                     </h1>
                     <img
                         className='hero-pic pic'
@@ -60,22 +61,49 @@ export default function App() {
                     />
                     <br />
                     <p>
-                        I'm currently finishing the web developer track at Bloc.
-                        My focus is on learning semantic HTML, CSS, JavaScript,
-                        React, Node, and Express. I love solving puzzles and
-                        learning. I've done that for the last 13 years as a
-                        mechanical engineer and I look forward to continuing
-                        that work as part of a software engineering team. When
-                        I'm not designing power plants and writing code, I spend
-                        my time trying to keep up with my kids and enjoying the
-                        beautiful state of Colorado. I also keep trying to get
-                        Linux working on my laptop.
+                        My focus is on learning JavaScript, React, Angular,
+                        Node, Express, and Python. I recently finished a web
+                        development apprenticeship at Bloc and I continue to
+                        learn about new languages and technologies every day. I
+                        love solving puzzles and building things. I've done that
+                        for the last 14 years as a mechanical engineer and I
+                        look forward to continuing that work as part of a
+                        software engineering team. When I'm not writing code, I
+                        spend my time trying to keep up with my kids and
+                        enjoying the beautiful state of Colorado. I also keep
+                        trying to find the best Linux distrobution for my
+                        laptop.
                     </p>
                 </section>
                 <section id='projects' className='projects'>
                     <div className='body-text heading-container'>
                         <h1 className='heading'>PROJECTS</h1>
                     </div>
+                    <ProjectListing
+                        name='Quiz Builder'
+                        icons={[
+                            {
+                                title: "HTML5",
+                                info: ["fab", "html5"],
+                            },
+                            {
+                                title: "CSS3",
+                                info: ["fab", "css3-alt"],
+                            },
+                            {
+                                title: "React",
+                                info: ["fab", "react"],
+                            },
+                            {
+                                title: "Node",
+                                info: ["fab", "node-js"],
+                            },
+                        ]}
+                        image={QbFrontpage}
+                        summary={`Quiz Builder is a site that helps you create simple multiple choice quizzes and share them with your friends. Each quiz can have up to 20 questions and each question can have up to 8 answer choices. It's built using Node/Express/PostgreSQL for the backend and React for the frontend and includes authentication using JSON web tokens.`}
+                        linkSite='https://quiz-builder-client.vercel.app'
+                        linkRepo='https://github.com/camdecoster/quiz-builder-client'
+                    />
                     <ProjectListing
                         name='Expense Tracker'
                         icons={[
@@ -123,32 +151,6 @@ export default function App() {
                         Just enter your blog address and see what comes up.`}
                         linkSite='https://camdecoster.github.io/down-the-tubes/'
                         linkRepo='https://github.com/camdecoster/down-the-tubes'
-                    />
-                    <ProjectListing
-                        name='Multiple Choice Quiz'
-                        icons={[
-                            {
-                                title: "HTML5",
-                                info: ["fab", "html5"],
-                            },
-                            {
-                                title: "CSS3",
-                                info: ["fab", "css3-alt"],
-                            },
-                            {
-                                title: "JavaScript",
-                                info: ["fab", "js-square"],
-                            },
-                        ]}
-                        image={QuizFrontpage}
-                        summary={`Responsive multiple choice quiz app designed to test
-                        your knowledge of the TV show Futurama. There's a
-                        landing page, ten trivia questions - with images,
-                        and a final summary. Test your knowledge of the
-                        show, or at least enjoy all of the colorful
-                        pictures.`}
-                        linkSite='https://camdecoster.github.io/futurama-quiz/'
-                        linkRepo='https://github.com/camdecoster/futurama-quiz'
                     />
                 </section>
                 <section id='contact' className='contact'>
