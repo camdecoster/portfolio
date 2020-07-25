@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function ProjectListing(props) {
     const icons = props.icons.map((icon) => (
         <FontAwesomeIcon
-            className='faIcon'
+            className='faIcon grow_big'
             title={icon.title}
             key={icon.title}
             icon={icon.info}
@@ -21,7 +21,7 @@ export default function ProjectListing(props) {
         <section id='ProjectListing' className='body-text'>
             <h3 className='proj-text'>{props.name}</h3>
             <img
-                className='dtt-pic proj-pic'
+                className='dtt-pic proj-pic grow'
                 alt='screenshot of down the tubes web page'
                 src={props.image}
             />

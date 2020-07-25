@@ -2,15 +2,15 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
-    faHtml5,
     faCss3Alt,
+    faGithubSquare,
+    faHtml5,
     faJsSquare,
-    faReact,
     faNodeJs,
     faLinkedin,
-    faGithubSquare,
+    faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeSquare, faFile } from "@fortawesome/free-solid-svg-icons";
 
 // Configuration
 import "./App.css";
@@ -30,14 +30,15 @@ import QuizFrontpage from "../../images/futurama_frontpage_large.png";
 export default function App() {
     // Add Font Awesome icons to library for use in other components
     library.add(
-        faHtml5,
         faCss3Alt,
+        faGithubSquare,
+        faHtml5,
         faJsSquare,
-        faReact,
         faNodeJs,
         faLinkedin,
-        faGithubSquare,
-        faEnvelopeSquare
+        faReact,
+        faEnvelopeSquare,
+        faFile
     );
 
     return (
@@ -62,17 +63,17 @@ export default function App() {
                     <br />
                     <p>
                         My focus is on learning JavaScript, React, Angular,
-                        Node, Express, and Python. I recently finished a web
-                        development apprenticeship at Bloc and I continue to
-                        learn about new languages and technologies every day. I
-                        love solving puzzles and building things. I've done that
-                        for the last 14 years as a mechanical engineer and I
-                        look forward to continuing that work as part of a
-                        software engineering team. When I'm not writing code, I
-                        spend my time trying to keep up with my kids and
-                        enjoying the beautiful state of Colorado. I also keep
-                        trying to find the best Linux distribution for my
-                        laptop.
+                        Node, Python, Go, Java, and anything else I can try out.
+                        I recently finished a web development program at Bloc
+                        and I continue to learn about new languages and
+                        technologies every day. I love solving puzzles and
+                        building things. I've done that for the last 14 years as
+                        a mechanical engineer and I look forward to continuing
+                        that work as part of a software engineering team. When
+                        I'm not writing code, I spend my time trying to keep up
+                        with my kids and enjoying the beautiful state of
+                        Colorado. I also keep trying to find the best Linux
+                        distribution for my laptop.
                     </p>
                 </section>
                 <section id='projects' className='projects'>
@@ -167,7 +168,7 @@ export default function App() {
                             aria-label='Link to email'
                         >
                             <FontAwesomeIcon
-                                className='faIcon'
+                                className='faIcon grow_big'
                                 title='Email'
                                 icon='envelope-square'
                             />
@@ -179,7 +180,7 @@ export default function App() {
                             aria-label='Link to GitHub'
                         >
                             <FontAwesomeIcon
-                                className='faIcon'
+                                className='faIcon grow_big'
                                 title='GitHub'
                                 icon={["fab", "github-square"]}
                             />
@@ -191,7 +192,7 @@ export default function App() {
                             aria-label='Link to LinkedIn'
                         >
                             <FontAwesomeIcon
-                                className='faIcon'
+                                className='faIcon grow_big'
                                 title='LinkedIn'
                                 icon={["fab", "linkedin"]}
                             />
