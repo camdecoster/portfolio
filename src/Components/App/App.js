@@ -52,8 +52,8 @@ export default function App() {
             <main>
                 <section id='about' className='about'>
                     <h1 id='hero-quote' className='body-text font-01'>
-                        My name is Cameron DeCoster. I'm a software engineer
-                        with some mechanical engineer mixed in.
+                        My name is Cameron DeCoster. I'm a software engineer and
+                        I love solving puzzles.
                     </h1>
                     <img
                         className='hero-pic pic'
@@ -62,18 +62,18 @@ export default function App() {
                     />
                     <br />
                     <p>
-                        My focus is on learning JavaScript, React, Angular,
-                        Node, Python, Go, Java, and anything else I can try out.
-                        I recently finished a web development program at Bloc
-                        and I continue to learn about new languages and
-                        technologies every day. I love solving puzzles and
-                        building things. I've done that for the last 14 years as
-                        a mechanical engineer and I look forward to continuing
-                        that work as part of a software engineering team. When
-                        I'm not writing code, I spend my time trying to keep up
-                        with my kids and enjoying the beautiful state of
+                        My focus is on building projects using JavaScript,
+                        React, Vue, Angular, Node, Python, and anything else I
+                        can try out. I continue to learn about new languages and
+                        technologies every day. I love problem solving and
+                        building things. I've done that for over 14 years as an
+                        engineer and I'd love to join your team and help out.
+                        When I'm not writing code, I spend my time trying to
+                        keep up with my kids and enjoying the beautiful state of
                         Colorado. I also keep trying to find the best Linux
-                        distribution for my laptop.
+                        distribution for my laptop (currently Debian; go
+                        stability!). Check out some of my projects below and get
+                        in touch if you have any questions.
                     </p>
                 </section>
                 <section id='projects' className='projects'>
